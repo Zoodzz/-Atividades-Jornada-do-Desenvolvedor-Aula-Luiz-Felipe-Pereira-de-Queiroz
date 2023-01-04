@@ -6,7 +6,7 @@ programa
 	
 	funcao inicio()
 	
-	{    escreva("Calculadora do preço de consumo de combustível: ")
+	{    escreva("Calculadora do preço de consumo de combustível\n\n ")
 		escreva("\nDigite a distância que irá percorrer em km: ")
 		leia(distanciaPercorridaKm)
 		escreva("\nDigite o consumo do veículo por litro: ")
@@ -19,7 +19,9 @@ programa
 		// o resultado do preço total de consumo na variavel precototal
 		
 		real precototal = ((distanciaPercorridaKm / consumoveiculoporLitro) * precocombustivel)
-		escreva("\nO preco total é: " + precototal + " R$ ")
+		real consumoVeiculo = distanciaPercorridaKm / consumoveiculoporLitro
+		escreva("\nO Preço total é: " + precototal + " R$ ")
+		escreva("\nConsumo do veiculo em Litros: " + consumoVeiculo + "L" )  
 		
 	}
 }
@@ -28,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 828; 
+ * @POSICAO-CURSOR = 217; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
